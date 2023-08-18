@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.div1{
+    margin-top: 30px;
+    border: 4px solid rgb(21, 15, 78);
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgb(73, 86, 202);
+    height: 35rem;
+    width: 25rem;
+    box-shadow: 5px 5px 20px 20px rgb(82, 120, 170);
+}
+.div1 h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.numbtn{
+    width: 65px;
+    height: 65px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    background-color: rgb(73, 86, 202);
+    border: 2px solid white;
+    border-radius: 2px;
+    color: azure;
+    margin: 5px;
+}
+.numbtn:hover{
+    box-shadow: 2px 2px 5px 5px rgb(73, 65, 65);
+    background-color: rgb(241, 239, 237);
+    color: rgb(29, 29, 185);
+    font-size: 27px;
+}
+.buttons{
+    background-color: rgb(228, 228, 147);
+    color: rgb(145, 90, 24);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 div1">
+                <h1 style="text-align: center;">Calculator</h1>
+                <div>
+                    <input type="text" id="result" class="form-control">
+                </div>
+                <div class="calc-button-row mt-4">
+                    <div class="text-center">
+                        <button id="seven" class="numbtn" onclick="displayNumber(7)">7</button>
+                        <button id="eight" class="numbtn" onclick="displayNumber(8)">8</button>
+                        <button id="nine" class="numbtn" onclick="displayNumber(9)">9</button>
+                        <button id="mul" class="numbtn buttons" onclick="displayNumber('*')">X</button>
+                    </div>
+
+                    <div class="text-center">
+                        <button id="four" class="numbtn" onclick="displayNumber(4)">4</button>
+                        <button id="five" class="numbtn" onclick="displayNumber(5)">5</button>
+                        <button id="six" class="numbtn" onclick="displayNumber(6)">6</button>
+                        <button id="sub" class="numbtn buttons" onclick="displayNumber('-')">-</button>
+                    </div>
+
+                    <div class="text-center">
+                        <button id="one" class="numbtn" onclick="displayNumber(1)">1</button>
+                        <button id="two" class="numbtn" onclick="displayNumber(2)">2</button>
+                        <button id="three" class="numbtn" onclick="displayNumber(3)">3</button>
+                        <button id="add" class="numbtn buttons" onclick="displayNumber('+')">+</button>
+                    </div>
+
+                    <div class="text-center">
+                        <button id="ac" class="numbtn buttons" onclick="clearBox()">AC</button>
+                        <button id="zero" class="numbtn buttons" onclick="displayNumber(0)">0</button>
+                        <button id="div" class="numbtn buttons" onclick="displayNumber('/')">/</button>
+                        <button id="equal" class="numbtn buttons" onclick="evaluateExp()">=</button>
+                    </div>
+
+                    <div class="mx-4">
+                        <button id="del" class="numbtn" onclick="removeLastItem()"><i class="fa-solid fa-delete-left"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
